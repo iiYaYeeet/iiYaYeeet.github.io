@@ -16,6 +16,10 @@ p
 	font-size:20pt;
 	font-family:"Trebuchet MS";
 }
+div.links
+{
+	height=80px;
+}
 div > a.link
 {
 	display:block;
