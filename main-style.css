@@ -35,6 +35,21 @@ div > a.link
 	width:98.6%;
 	padding-top:20px;
 }
+div > p.contact
+{
+	display:block;
+	height:50px;
+	border:solid #b48a58 4px;
+	border-radius:4px;
+	background-color:#2c2c2c;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	text-decoration:none;
+	font-family:"Trebuchet MS";
+	width:98.6%;
+	padding-top:20px;
+}
 div.logo-name
 {
 	display:inline-grid;
