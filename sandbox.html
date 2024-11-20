@@ -9,7 +9,10 @@
 	
 	<body>
 		<script>
-		fetch("https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games")
+		fetch(
+		"https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games",{
+		mode:  'no-cors'
+		})
 		.then(res => {
 		console.log(res);
 		})
