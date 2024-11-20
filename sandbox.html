@@ -10,6 +10,29 @@
 	<body>
 		<script>
 		GET profile:games https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games
+		function getWeather(zip) {
+		let endpoint = "https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games";
+		let queryString = "zip=" + zip + "&units=imperial&appid=" + apiKey;
+		let url = endpoint + "?" + queryString;
+
+		let xhr = new XMLHttpRequest();
+		xhr.addEventListener("load", responseReceivedHandler);
+		xhr.responseType = "json";
+		xhr.open("GET", url);
+		xhr.send();
+		}
+
+		function responseReceivedHandler() {
+		let weatherInfo = document.getElementById("weather");
+		if (this.status === 200) {
+		weatherInfo.innerHTML = 
+       "<p>Current temp: " + this.response.main.temp + " &deg;F</p>" +
+       "<p>Desc: " + this.response.weather[0].description + "</p>" +
+       "<p>Humidity: " + this.response.main.humidity + "%</p>";
+		} else {
+			weatherInfo.innerHTML = "Weather data unavailable.";
+			}
+		}
 		</script>
 	</body>
 </html>
