@@ -5,7 +5,6 @@ html
 body
 {
 	color:#338447;
-	font-size:20pt;
 	font-family:"Trebuchet MS";
 	height:300%;
 	overflow: visible;
@@ -14,8 +13,11 @@ body
 p
 {
 	color:#338447;
-	font-size:20pt;
 	font-family:"Trebuchet MS";
+}
+.holder
+{
+	display:flex;
 }
 .link
 {
@@ -78,6 +80,7 @@ div.links
 {
 	margin-top:10px;
 	margin-left:2.5%;
+	margin-right:2.5%;
 	width:95%;
 }
 div.logo-name
@@ -107,6 +110,7 @@ div.textheader
 	text-align:center;
 	border:solid limegreen 4px;
 	font-family:"Trebuchet MS";
+	width:100%
 }
 div > p.text
 {
@@ -128,14 +132,14 @@ div.art
 	justify-content:space-between;
 	background-color:#2c2c2c;
 	margin-left:12px;
-	margin-right:12px;
+	margin-right:8px;
 	border:solid #60b9c3 4px;
 	overflow: visible;
 }
 div.mainbody
 {
-	position:absolute;
 	top:140px;
+	width:100%
 }
 div.joker
 {	
