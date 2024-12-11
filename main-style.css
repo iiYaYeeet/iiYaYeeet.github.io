@@ -211,6 +211,37 @@ margin-left:20px;
 margin-right:6px;
 border:solid #60b9c3 4px;
 }
+form
+{
+	padding:10px;
+}
+input[type=text], input[type=email], input[type=tel]
+{
+   box-sizing: border-box;
+   width: 200px;
+   padding: 5px;
+   border: 3px solid #60b9c3;
+   border-radius:1px;
+}
+input[type=submit] {
+   cursor: pointer;
+   background-color:#9a9b9c;
+   border: 1px solid #2b6332;
+   border-radius:5px;
+}
+input[type=submit]:hover {
+   background-color: #07d;
+}
+.pullbutton
+{
+	cursor: pointer;
+   background-color:#9a9b9c;
+   border: 1px solid #2b6332;
+   border-radius:5px;
+}
+.pullbutton:hover {
+   background-color: #07d;
+}
 h1,h2,h3,h4,caption
 {
 	color:white;
