@@ -4,6 +4,7 @@
 	const newElement = document.createElement("div");	
 	const view =[];
 	const downs =[];
+	function pullapi() {
 	fetch("https://cors-anywhere.herokuapp.com/https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games",)
 	.then(res => {
 	return res.json();
@@ -21,7 +22,7 @@
 		console.log(totaldownloads);
 		replacedata(totalviews,totaldownloads);
 	})
-
+	}
 	function replacedata(v,d) {
 		const values = document.getElementsByClassName("displays")[0];
 		values.getElementsByClassName("views")[0].innerHTML = v;
