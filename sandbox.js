@@ -25,6 +25,7 @@
 		console.log(totaldownloads);
 		replacedata(totalviews,totaldownloads);
 	})
+	.catch(error=>console.log(error));
 	}
 	//push it out
 	function replacedata(v,d) {
