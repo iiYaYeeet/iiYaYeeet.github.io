@@ -2,10 +2,12 @@
 	var totaldownloads;
 	const oldElement = document.getElementById("views");
 	const newElement = document.createElement("div");	
-	const view =[];
-	const downs =[];
+	var view =[];
+	var downs =[];
 	//pull from api
 	function pullapi() {
+	totalviews=0;
+	totaldownloads=0;
 	fetch("https://cors-anywhere.herokuapp.com/https://itch.io/api/1/98EDYuzPNLo22ofUPRd4IH4vFYlVQLlesraGAwYK/my-games",)
 	.then(res => {
 	return res.json();
@@ -19,8 +21,10 @@
 		downs.push(dowloads);
 	})
 	//concentrate
-		const totalviews = view.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-		const totaldownloads = downs.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+		totalviews = view.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+		totaldownloads = downs.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+		view =[];
+        downs =[];
 		console.log(totalviews);
 		console.log(totaldownloads);
 		replacedata(totalviews,totaldownloads);
@@ -31,7 +35,12 @@
 	function replacedata(v,d) {
 		const values = document.getElementsByClassName("displays")[0];
 		values.getElementsByClassName("views")[0].innerHTML = v;
-		values.getElementsByClassName("downloads")[0].innerHTML = d;
+		values.getElementsByClassName("views")[1].innerHTML = d;
+	}
+	function clear()
+	{
+		totalviews=0;
+		totaldownloads=0;
 	}
 	
 	function validate()
