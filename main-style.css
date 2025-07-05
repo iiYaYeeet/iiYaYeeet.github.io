@@ -157,7 +157,7 @@ div.logo-name
 div.header > a
 {
 	justify-content:space-around;
-	border:solid limegreen 1px;
+	border:solid green 1px;
 	font-size:20px;
 	text-align:center;
 	color:#338447;
@@ -169,7 +169,7 @@ div.textheader
 	justify-content:center;
 	background-color:#1c1c1c;
 	text-align:center;
-	border:solid limegreen 4px;
+	border:solid green 4px;
 	font-family:"Trebuchet MS";
 	width:100%
 }
@@ -179,7 +179,7 @@ div > p.text
 	justify-content:space-around;
 	background-color:#1c1c1c;
 	text-align:center;
-	border:solid limegreen 1px;
+	border:solid green 1px;
 	font-family:"Trebuchet MS";
 }
 div.art
