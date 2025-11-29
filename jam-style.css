@@ -1,6 +1,6 @@
 html
 {
-	background-color:#0d0d0d;
+	background:linear-gradient(180deg,rgba(0, 0, 0, 1) 47%, rgba(0, 221, 255, 1) 99%);
 }
 body
 {
@@ -8,6 +8,7 @@ body
 	font-family:"Trebuchet MS";
 	height:auto;
 	text-align:center;
+
 }
 p
 {
